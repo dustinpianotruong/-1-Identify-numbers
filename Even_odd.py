@@ -2,19 +2,22 @@
 Program to check if numbers are even or odd.
 Stores all entered numbers and stops when user types 'Stop'.
 """
-
+# Initialize an empty list to store numbers
 numbers = []
-
+# Keep accepting user input until they choose to exit
 while True:
+    # Get user input for the number or exit command
     user_input = input("Enter a number (or type 'Stop' to exit): ")
     
     # Check if user wants to stop
     if user_input.lower() == "stop":
-        break
-    
+        # Exit the loop
+        break 
+    # Attempt to execute code that might cause an error
     try:
         # Convert input to integer
         number = int(user_input)
+        # Add the number to the list
         numbers.append(number)
         
         # Determine if even or odd

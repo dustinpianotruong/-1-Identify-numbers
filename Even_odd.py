@@ -22,10 +22,13 @@ while True:
         
         # Determine if even or odd
         if number % 2 == 0:
+            # Print message using f-string (Formatted string to insert variable values into text using curly brackets)
             print(f"{number} is even")
+        #If the if statement condition is not met
         else:
+            # Print message using f-string
             print(f"{number} is odd")
-    
+    # Handle the ValueError exception when input can't be converted to an integer
     except ValueError:
         print("Invalid input! Please enter a valid number or 'Stop' to exit.")
 

@@ -2,6 +2,11 @@
 Program to check if numbers are even or odd.
 Stores all entered numbers and stops when user types 'Stop'.
 """
+"""
+Program that continuously prompts the user to enter numbers, stores them in a list,
+displays whether each number is even or odd, and at the end shows all numbers
+separated into even and odd lists.
+"""
 # Initialize an empty list to store numbers
 numbers = []
 # Keep accepting user input until they choose to exit

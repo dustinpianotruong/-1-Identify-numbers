@@ -36,7 +36,11 @@ while True:
 print("\n--- Results ---")
 if numbers:
     print(f"All numbers entered: {numbers}")
+    """ Create a new list containing only even numbers from the numbers list using a list comprehension
+    that filters by checking if each number is divisible by 2 """
     even_numbers = [n for n in numbers if n % 2 == 0]
+    """ Create a new list containing only odd numbers from the numbers list using a list comprehension
+    that filters by checking if each number isn't divisible by 2 """
     odd_numbers = [n for n in numbers if n % 2 != 0]
     print(f"Even numbers: {even_numbers}")
     print(f"Odd numbers: {odd_numbers}")
